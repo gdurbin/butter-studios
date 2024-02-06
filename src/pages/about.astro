@@ -1,0 +1,110 @@
+---
+// Components
+
+// Layouts
+import Layout from "@layouts/BaseLayout.astro";
+
+// Assets
+import { Image } from "astro:assets";
+import imgAbout1 from "@images/alex-haney-02-unsplash.jpg";
+
+// Props
+const {
+  pageTitle = "About",
+  metaTitle = "About Page",
+  metaDescription = "Description of web page.",
+} = Astro.props;
+---
+
+<Layout
+  pageTitle={"Butter Studios | " + pageTitle}
+  metaTitle={metaTitle}
+  metaDescription={metaDescription}
+>
+  <section class="grid max-w-full mx-auto lg:grid-cols-12">
+    <div class="max-w-full mx-auto lg:col-span-12">
+      <h1
+        class="max-w-xl mb-4 lg:mt-16 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+      >
+        Studio Vision
+      </h1>
+    </div>
+    <div class="max-w-xl mx-auto m-4 p-6 lg:col-span-12">
+      <p
+        class="max-w-xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+      >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate amet
+        excepturi illum optio eaque, dolore molestiae minima placeat tenetur
+        alias sunt laboriosam repudiandae quam quo quibusdam assumenda.
+        Dignissimos, nostrum possimus.
+      </p>
+      <p
+        class="max-w-xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+      >
+        Quos molestias maxime odit cum maiores itaque inventore veniam tempora,
+        nemo dolorum provident reiciendis dolorem sed facilis esse blanditiis?
+        Tempore vel suscipit voluptate est sit, voluptatibus velit quasi
+        excepturi voluptatum?
+      </p><p
+        class="max-w-xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+      >
+        Yur accusantium veniam! Repellat omnis incidunt expedita excepturi eum
+        cum consectetur reprehenderit, magni nisi. Sapiente mollitia vitae sequi
+        ad, facere quaerat enim sint fugit deserunt. Vel, magnam quisquam!
+        Repellendus praesentium, modi quo expedita necessitatibus esse sequi,
+        molestiae earum eveniet ut quia? Deserunt ex pariatur provident officiis
+        tempore asperiores esse culpa, quidem maiores quibusdam, facere cumque.
+      </p>
+      <p
+        class="max-w-xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+      >
+        Maxime inventore aliquam totam, dicta sint atque culpa quis hic,
+        praesentium eius sunt, sapiente necessitatibus iure vero quisquam!
+        Voluptatum quidem modi tenetur praesentium.
+      </p>
+    </div>
+  </section>
+  <section class="grid max-w-full lg:grid-cols-12 lg:mb-16">
+    <div class="grid max-w-screen-xl mx-auto lg:grid-cols-12 lg:col-span-12">
+      <div class="max-w-full lg:col-span-6 m-4 p-6">
+        <h2
+          class="max-w-xl mb-4 text-2xl font-semibold text-gray-900 dark:text-white"
+        >
+          Butter Community
+        </h2>
+        <p
+          class="max-w-xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+          sapiente labore at dignissimos architecto beatae temporibus,
+          aspernatur id voluptates suscipit minima laboriosam numquam corrupti
+          iste recusandae distinctio magni. Asperiores, ullam.
+        </p>
+        <p
+          class="max-w-xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          consectetur sunt dolores natus, aspernatur quidem possimus deserunt
+          iste quibusdam aperiam repellat itaque quis dolor quisquam, esse
+          dolorum reprehenderit. Assumenda, voluptas!
+        </p>
+        <p
+          class="max-w-xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          nulla temporibus natus blanditiis nemo, tempora ipsa soluta vero sint!
+          Natus sequi inventore cum quae praesentium dignissimos ipsum commodi
+          recusandae corrupti.
+        </p>
+      </div>
+      <div class="hidden lg:flex col-span-6">
+        <Image
+          class="h-auto max-w-xl m-4 mr-auto my-auto rounded-lg"
+          src={imgAbout1}
+          alt="Image"
+          width="800"
+        />
+      </div>
+    </div>
+  </section>
+</Layout>
